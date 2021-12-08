@@ -1,20 +1,20 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
-# Python Base
-A base python setup
+# Python Django Base
+A base python Djano setup
 
 ## Set up in another repo
 ```
-  git remote add python-base git@github.com:leinadao/python-base.git
-  git fetch python-base
-  git rebase python-base/main # Resolve any conflicts.
+  git remote add python-django-base git@github.com:leinadao/python-django-base.git
+  git fetch python-django-base
+  git rebase python-django-base/main # Resolve any conflicts.
   git push # possibly need --force
 ```
 Update latest base changes in a repo:
 ```
-  git fetch python-base
-  git rebase python-base/main # Resolve any conflicts.
+  git fetch python-django-base
+  git rebase python-django-base/main # Resolve any conflicts.
   git push # possibly need --force
 ```
 
