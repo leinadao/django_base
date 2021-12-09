@@ -1,11 +1,12 @@
 [tool.poetry]
-name = "python_base"
+name = "python_django_base"
 version = "0.1.0"
-description = "A base python setup."
+description = "A base python Django setup."
 authors = ["Name <email>"]
 
 [tool.poetry.dependencies]
 python = "^3.11.1"
+Django = "^4.0"
 
 [tool.poetry.group.dev.dependencies]
 # Environment:
