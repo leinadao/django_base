@@ -18,7 +18,7 @@ sys.path.insert(0, os.path.abspath(".."))
 
 # -- Project information -----------------------------------------------------
 
-project = "Python Base"
+project = "Python Django Base"
 copyright = "2021, Daniel Osborne"
 author = "Daniel Osborne"
 
