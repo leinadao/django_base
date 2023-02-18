@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "python_django_base"
 version = "0.1.0"
-description = "A base python Django setup."
+description = "A base Python Django setup."
 authors = ["Name <email>"]
 
 [tool.poetry.dependencies]
@@ -35,3 +35,7 @@ profile = "black"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+# Provide a shortcut 'poetry run manage ...' for 'poetry run python manage.py ...':
+manage = "manage:main"

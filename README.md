@@ -2,7 +2,7 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
 # Python Django Base
-A base python Djano setup
+A base Python Django site setup
 
 ## Set up in another repo
 ```
