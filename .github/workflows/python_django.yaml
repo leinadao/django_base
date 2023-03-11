@@ -1,4 +1,4 @@
-name: Python Checks
+name: Python Django Checks
 
 on:
   push:
@@ -15,6 +15,7 @@ jobs:
     env:
       # Have pre-commit install inside the venv so it's also cached by setup-python.
       PRE_COMMIT_HOME: ${{ github.workspace }}/.venv/pre-commit
+      DJANGO_SETTINGS_MODULE: core.settings_lint
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
@@ -35,7 +36,7 @@ jobs:
           .pre-commit-config.yaml
     - name: Install dependencies (cached)
       run: poetry install --sync
+    - name: Check migrations
+      run: poetry run python manage.py migrate
     - name: Check pre-commit was used to lint etc.
       run: poetry run pre-commit run --all-files
-#     - name: Test with pytest
-#       run: poetry run pytest
