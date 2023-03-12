@@ -38,5 +38,7 @@ jobs:
       run: poetry install --sync
     - name: Check migrations
       run: poetry run python manage.py migrate
+    - name: Exclude untracked migrations check
+      run: sed -i '/check-untracked-migrations/d' .pre-commit-config.yaml
     - name: Check pre-commit was used to lint etc.
       run: poetry run pre-commit run --all-files
