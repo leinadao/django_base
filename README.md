@@ -21,7 +21,7 @@ Update latest base changes in a repo:
   git push
 ```
 
-=======
+---
 
 ## Setup
 ### Install Poetry (if not already on your system)
